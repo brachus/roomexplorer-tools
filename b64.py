@@ -59,12 +59,6 @@ dat = base64.encodestring(dat)
 
 cmpr_dat = b64str_compress(rm_newlines(dat))
 
-print cmpr_dat
-print
-print len(dat), len(cmpr_dat)
+print rm_newlines(dat)
 
-f = open('out','w')
-f.write( rm_newlines(dat) )
-f.close()
 
-print 'wrote to "out" successfully!'
